@@ -6,8 +6,8 @@
   "scripts": {
     "test": "TS_NODE_FAST=true TS_NODE_NO_PROJECT=true ava",
     "postinstall": "typings install",
-    "prepublish": "rimraf dist && tsc -p .",
-    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post"
+    "build": "rimraf dist && tsc -p .",
+    "semantic-release": "npm run build && semantic-release pre && npm publish --access=public && semantic-release post"
   },
   "repository": {
     "type": "git",
