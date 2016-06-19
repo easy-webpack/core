@@ -1,5 +1,6 @@
 import {WebpackConfig} from './webpack'
 import {assign, literalReplace} from '@easy-webpack/assign'
+export {get} from 'lodash'
 export * from './webpack'
 export type EasyWebpackConfig = WebpackConfig | ((this: WebpackConfig) => WebpackConfig)
 
