@@ -1,0 +1,51 @@
+{
+  "name": "@easy-webpack/core",
+  "description": "Easy Webpack configurator",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "TS_NODE_FAST=true TS_NODE_NO_PROJECT=true ava",
+    "prepublish": "rimraf dist && tsc -p .",
+    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easy-webpack/core.git"
+  },
+  "keywords": [
+    "webpack",
+    "easy",
+    "configurator",
+    "configuration",
+    "config",
+    "simple"
+  ],
+  "author": "Bazyli Brzóska <bazyli.brzoska@gmail.com> (https://invent.life)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/easy-webpack/core/issues"
+  },
+  "homepage": "https://github.com/easy-webpack/core#readme",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "semantic-release": "^4.3.5",
+    "ts-node": "^0.9.1",
+    "tslint": "^3.11.0",
+    "tslint-config-standard": "^1.2.2",
+    "typescript": "^1.9.0-dev.20160619-1.0"
+  },
+  "dependencies": {
+    "@easy-webpack/assign": "^0.9.9",
+    "debug": "^2.2.0",
+    "lodash": "^4.13.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.{ts,js}"
+    ],
+    "tap": false,
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}

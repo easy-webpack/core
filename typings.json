@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "debug": "registry:npm/debug#2.0.0+20160511151334",
+    "lodash": "registry:npm/lodash#4.0.0+20160416211519"
+  },
+  "globalDependencies": {
+    "node": "registry:env/node#6.0.0+20160610031852"
+  }
+}
