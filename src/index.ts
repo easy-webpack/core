@@ -1,8 +1,6 @@
 import {WebpackConfig} from './webpack'
 import {assign, literalReplace} from '@easy-webpack/assign'
-import * as debugLoader from 'debug'
 export * from './webpack'
-const debug = debugLoader('easy-webpack')
 export type EasyWebpackConfig = WebpackConfig | ((this: WebpackConfig) => WebpackConfig)
 
 function hasProcessFlag(flag) {

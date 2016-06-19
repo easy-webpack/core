@@ -1,3 +1,3 @@
-# easy-assign
+# Easy Webpack
 
-Easily deep assign objects and merge arrays inside of them.
+An easy way to configure Webpack.
