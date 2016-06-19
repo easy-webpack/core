@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
     "module": "commonjs",
     "experimentalDecorators": true,
     "moduleResolution": "node",
@@ -8,7 +8,6 @@
     "declaration": true,
     "outDir": "dist",
     "rootDir": "src",
-    "sourceRoot": "src",
     "sourceMap": true
   },
   "exclude": [
