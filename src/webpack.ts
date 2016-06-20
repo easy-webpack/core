@@ -109,12 +109,17 @@ export interface WebpackConfig {
       modulesDirectories?: Array<string>;
       extensions?: Array<string>;
       packageMains?: Array<string>;
+      mainFields?: Array<string | Array<string>>;
       alias?: { [packageName: string]: string };
       /**
        * That’s a resolveLoader only property.
        * It describes alternatives for the module name that are tried.
        */
       moduleTemplates?: Array<string>;
+      /**
+       * Webpack2 Equivalent of resolve.root & resolve.modulesDirectories
+       */
+      modules?: Array<string>;
     }
 
     alias?: { [packageName: string]: string }

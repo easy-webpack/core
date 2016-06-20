@@ -15,7 +15,7 @@ export default function generateConfig(...configs: Array<EasyWebpackConfig>) {
       port: process.env.WEBPACK_PORT || 8080,
       host: process.env.WEBPACK_HOST || 'localhost',
       ENV: process.env.NODE_ENV || process.env.ENV || 'development',
-      HMR: hasProcessFlag('hot'),
+      HMR: hasProcessFlag('hot') || !!process.env.WEBPACK_HMR,
     }
   } as WebpackConfig
 
