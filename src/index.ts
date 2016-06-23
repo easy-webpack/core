@@ -12,7 +12,7 @@ function hasProcessFlag(flag) {
 export default function generateConfig(...configs: Array<EasyWebpackConfig>) {
   let config = {
     metadata: {
-      port: process.env.WEBPACK_PORT || 8080,
+      port: process.env.WEBPACK_PORT || 9000,
       host: process.env.WEBPACK_HOST || 'localhost',
       ENV: process.env.NODE_ENV || process.env.ENV || 'development',
       HMR: hasProcessFlag('hot') || !!process.env.WEBPACK_HMR,
