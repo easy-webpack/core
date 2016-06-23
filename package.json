@@ -5,7 +5,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "TS_NODE_FAST=true TS_NODE_NO_PROJECT=true ava",
-    "postinstall": "typings install",
+    "prepublish": "typings install",
     "build": "rimraf dist && tsc -p .",
     "semantic-release": "npm run build && semantic-release pre && npm publish --access=public && semantic-release post"
   },
