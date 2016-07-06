@@ -231,7 +231,7 @@ This is great in a number of scenarios, such as:
 - you're starting out a project and don't want to think too hard about how to configure Webpack
 - you want to delegate the task of implementing the configuration of certain Webpack features to other people
 - you don't neccessairly feel like researching *ze internets* every other month for an updated tutorial for the up-to-date best practices for implementing a given feature, you'd rather `npm update` and be done with it
-- you want a clean "base" config that works, that you can override/append with our own custom features or parts
+- you want a clean "base" config that works, that you can override/append with your own custom features or parts
 
 If you see value in any of the above mentioned scenarios, you should give feature-config presets a try.
 
