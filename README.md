@@ -3,10 +3,10 @@
 Creating and maintaining configuration files for [Webpack](https://webpack.github.io/) can be both intimidating and a real chore, especially for people who don't want to invest hours or even days to studying the [far-from-great-but-slowly-getting-better docs](https://webpack.github.io/docs/), testing and debugging various options, when in reality, they only wanted to get on with their **real work**: developing apps, sites or libraries.
 
 **Easy Webpack** presents solutions to this problem to a variety of users in different ways:
-- to those that simply "want things to work out of the box", by easily stacking together [pre-made *preset configs*](#The-Easy-Webpack-Ecosystem---Feature-and-Configuration-Presets) to achieve the desired effect
+- to those that simply "want things to work out of the box", by easily stacking together [pre-made *preset configs*](#the-easy-webpack-ecosystem---feature-and-configuration-presets) to achieve the desired effect
 - to more advanced users, by exposing [useful helper methods](#generating-configs) that make it possible to separate concerns and make parts of the config easily extendable or conditional (e.g. based on `NODE_ENV`).
 
-Instead of defining the Webpack configuration file as a flat, "black box" that contains all the features mixed up together in a long file of strings, objects, plugin imports and arrays, it makes it possible to **modularize** and **clean-up** the config by clearly separating individual *features* - as stackable configuration blocks, which in turn increase readability, [reusability and ease-of-maintainance](#The-Easy-Webpack-Ecosystem---Feature-and-Configuration-Presets).
+Instead of defining the Webpack configuration file as a flat, "black box" that contains all the features mixed up together in a long file of strings, objects, plugin imports and arrays, it makes it possible to **modularize** and **clean-up** the config by clearly separating individual *features* - as stackable configuration blocks, which in turn increase readability, [reusability and ease-of-maintainance](#the-easy-webpack-ecosystem---feature-and-configuration-presets).
 
 ## Usage
 
@@ -26,13 +26,13 @@ const generateConfig = require('@easy-webpack/core').generateConfig;
 
 ### Generating Configs
 
-`generateConfig` is a helper method that can be used to generate a desired config file from different "configuration parts" or "presets" that are passed into it as arguments. The arguments can either be [simple `Objects`](#example-with-pure-Objects) or [a `Function`](#object-generators), that returns the desired configuration `Object`, or a mixture of both. The order of arguments matters.
+`generateConfig` is a helper method that can be used to generate a desired config file from different "configuration parts" or "presets" that are passed into it as arguments. The arguments can either be [simple `Objects`](#example-with-pure-objects) or [a `Function`](#object-generators), that returns the desired configuration `Object`, or a mixture of both. The order of arguments matters.
 
 It is possible to run `generateConfig` many times consecutively, by using the output of the previous execution as the first argument of the next one. This might be useful in situations where you'd like to add a set of features  conditionally.
 
 **Depending on your current knowledge of Webpack, please either read on or jump ahead**:
 
-- I know very little about Webpack, I'd just like to use it, please. [Jump here](#The-Easy-Webpack-Ecosystem---Feature-and-Configuration-Presets).
+- I know very little about Webpack, I'd just like to use it, please. [Jump here](#the-easy-webpack-ecosystem---feature-and-configuration-presets).
 - I have already created configuration files for Webpack in the past and I'd like to know how Easy Webpack can help simplify my workflow. Awesome! Read on.
 
 #### How it works
@@ -63,6 +63,8 @@ To illustrate how Easy Webpack works, let's create a simple Webpack configuratio
 
 First, let's define some configuration objects, each clearly representing separate concerns we'd like to address in the output config file:
 
+<details>
+<summary>**Click here to expand the example**</summary>
 ```js
 const path = require('path');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
@@ -121,6 +123,7 @@ const css = {
   }
 }
 ```
+</details>
 
 We can now use the `generateConfig` function from `@easy-webpack/core` to combine those parts into one, functional configuration object, which differs depending on the `NODE_ENV`:
 
@@ -172,7 +175,7 @@ The function you pass in will be evaluated with its `this` bound to the current 
 By further creating wrapper functions that generate functions that generate configuration objects (that's a mouthful!), you can create very clean wrappers for specific functionality (this is also how our preset configs are made):
 
 <details>
-<summary>Click here to expand the example</summary>
+<summary>**Click here to expand the example**</summary>
 ```js
 import {get} from 'lodash'; // helper for extracting current value //
 
@@ -241,6 +244,7 @@ As a rule, all the official Easy Webpack packages are made more robust by return
 Every Easy Webpack package includes typings, which means IDEs such as Visual Studio, Visual Studio Code or Webstorm will show appropriate autocomplete listing all the possibile options. Since the feature configs are still mostly undocumented (Pull Requests appreciated!), its best to rely on the typings and refer to the source code as a last resort.
 
 To use a given preset simply:
+
 1. install it via NPM as you normally would any package
   ```sh
   npm install @easy-webpack/config-css --save-dev
@@ -320,5 +324,5 @@ I was not aware of these projects when developing Easy Webpack, however I feel t
 ## Hall of Fame
 
 Made possible thanks to these brave souls:
-- Bazyli Brzóska (@niieani) [https://invent.life]
-- Dwayne Charrington (@Vheissu) [http://ilikekillnerds.com]
+- @niieani (Bazyli Brzóska) https://invent.life
+- @Vheissu (Dwayne Charrington) http://ilikekillnerds.com
