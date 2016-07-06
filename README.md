@@ -246,9 +246,11 @@ Every Easy Webpack package includes typings, which means IDEs such as Visual Stu
 To use a given preset simply:
 
 1. install it via NPM as you normally would any package
-  ```sh
-  npm install @easy-webpack/config-css --save-dev
-  ```
+   
+   ```sh
+   npm install @easy-webpack/config-css --save-dev
+   ```
+   
 2. insert a call to it as an argument to your `generateConfig` call (shown in the example below)
 
 An example `webpack.config.js` that uses strictly configuration presets might then look like this:
