@@ -311,12 +311,17 @@ Note that it is ultimately the developers responsibility to ensure he has set co
 ## What are others saying
 
 > You have done a fantastic job by creating easy-webpack. Thank you so much. You don't know how frustrated I was learning Webpack and creating a working webpack.config.js
+
 -- [@rajajhansi](https://github.com/easy-webpack/core/issues/3#issuecomment-230328427)
 
+
 > Webpack has quite a steep learning curve when you start getting knee-deep into it. That new Easy Webpack stuff is simply beautiful -- seriously it's so good. Lots of configurations for Webpack projects without needing to pull your hair out. 
+
 -- @Vheissu [Gitter @ June 28, 2016 8:39 AM](https://gitter.im/aurelia/Discuss?at=57721bb58441a8124d6e1e84)
 
+
 > easy webpack [is] a great idea
+
 -- @rquast [Gitter @ June 28, 2016 8:42 AM](https://gitter.im/aurelia/Discuss?at=57721c3b8c9263ba3011f4cf)
 
 ## Contributing
