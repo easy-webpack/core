@@ -9,7 +9,7 @@ function hasProcessFlag(flag) {
   return process.argv.join('').indexOf(flag) > -1
 }
 
-export default function generateConfig(...configs: Array<EasyWebpackConfig>) {
+export function generateConfig(...configs: Array<EasyWebpackConfig>) {
   let config = {
     metadata: {
       port: process.env.WEBPACK_PORT || 9000,
@@ -30,3 +30,5 @@ export default function generateConfig(...configs: Array<EasyWebpackConfig>) {
   }
   return config
 }
+
+export default generateConfig;
