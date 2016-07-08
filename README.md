@@ -219,9 +219,7 @@ function css({ filename = '[name].css', allChunks = false, sourceMap = false, ex
 ```
 </details>
 
-For simple uses, such as overriding a setting, or adding a plugin, using a simple object is usually enough.
-
-The default behavior is to deep merge objects, append values to arrays and in all other cases overwrite the old values. The function approach allows for more fine grained changes like prepending arrays, or using previously generated config as input for the generated output. Last config is available as `this` inside the function.
+Note that for simple uses, such as overriding a setting, or adding a plugin, using a simple object is usually enough.
 
 ## The Easy Webpack Ecosystem - Feature and Configuration Presets
 
