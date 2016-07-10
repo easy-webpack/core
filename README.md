@@ -338,7 +338,12 @@ If you created an Easy Webpack feature configuration preset package please add t
 
 ## Prior art
 
-I was not aware of these projects when developing Easy Webpack, however I feel the final design is more flexible than the projects cited below. Feel free to judge for yourself though!
+Direct inspiration for this project:
+
+- [webpack-merge](https://www.npmjs.com/package/webpack-merge) by @bebraw
+- using Array and Object destructuring for Webpack configuration files (like [this](https://github.com/chentsulin/electron-react-boilerplate/blob/d6115ccc957d788c9c8b2a82c4cd2e1685fa0103/webpack.config.development.js#L6))
+
+Other projects, of which I was not aware when developing Easy Webpack listed below. I still feel Easy Webpack's final design allows for more flexible usage scenarios than the projects cited below. Feel free to judge for yourself though!
 
 - [webpack-config](https://mdreizin.github.io/webpack-config/) by @mdreizin
 - [webpack-configurator](https://github.com/lewie9021/webpack-configurator) by @lewie9021
