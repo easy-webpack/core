@@ -31,4 +31,4 @@ export function generateConfig(...configs: Array<EasyWebpackConfig>) {
   return config
 }
 
-export default generateConfig;
+export default generateConfig
