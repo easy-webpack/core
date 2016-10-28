@@ -1,7 +1,7 @@
-import {Webpack as WebpackConfig} from './webpack'
+import {Webpack as WebpackConfig} from '../webpack'
 import {assign, literalReplace} from '@easy-webpack/assign'
 export {get} from 'lodash'
-export {Webpack as WebpackConfig} from './webpack'
+export {Webpack as WebpackConfig} from '../webpack'
 export * from '@easy-webpack/assign'
 
 function hasProcessFlag(flag) {

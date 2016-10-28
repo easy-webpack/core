@@ -3,4 +3,5 @@
 .vscode
 npm-debug.log*
 /typings
-/dist
+
+/yarn.lock

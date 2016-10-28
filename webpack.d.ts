@@ -7,7 +7,7 @@
 // Definitions: https://github.com/webpack/webpack
 
 
-declare namespace WebpackType {
+export declare namespace WebpackType {
     interface Node {
         Buffer?: boolean | "mock";
         __dirname?: boolean | "mock";
