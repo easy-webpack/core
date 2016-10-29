@@ -281,7 +281,7 @@ export interface Webpack {
      * Object: Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array. If its' array all modules are loaded upon startup. The last one is exported. If it's a string look at the definition for string.
      * String: The entry point for one output file. The string is resolved to a module which is loaded upon startup.
      */
-    entry: WebpackType.EntryItem | {[key: string]: WebpackType.EntryItem};
+    entry?: WebpackType.EntryItem | {[key: string]: WebpackType.EntryItem};
 
     /**
      * Specify dependencies that shouldn't be resolved by webpack, but should become dependencies of the resulting bundle. The kind of the dependency depends on `output.libraryTarget`.

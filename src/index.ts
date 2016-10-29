@@ -8,7 +8,7 @@ function hasProcessFlag(flag) {
   return process.argv.join('').indexOf(flag) > -1
 }
 
-export type WebpackConfigWithMetadata = WebpackConfig & { metadata: any }
+export type WebpackConfigWithMetadata = WebpackConfig & { metadata?: any }
 export type EasyWebpackConfig = WebpackConfigWithMetadata | ((this: WebpackConfigWithMetadata) => WebpackConfigWithMetadata)
 
 export function generateConfig(...configs: Array<EasyWebpackConfig>) {
