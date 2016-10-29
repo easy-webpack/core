@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/easy-webpack/core#readme",
   "devDependencies": {
-    "greenkeeper-postpublish": "^1.0.0",
     "ava": "^0.16.0",
+    "greenkeeper-postpublish": "^1.0.0",
     "rimraf": "^2.5.4",
     "semantic-release": "^4.3.5",
     "ts-node": "^1.1.0",
