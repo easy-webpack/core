@@ -36,7 +36,9 @@ export function generateConfig(...configs: Array<EasyWebpackConfig>) {
 export function stripMetadata(config: EasyWebpackConfig) {
   let overlayConfig: WebpackConfigWithMetadata
   if (typeof config === 'function') {
-    overlayConfig = config.apply(config)
+    overlayConfig = config.apply({})
+  } else {
+    overlayConfig = Object.assign({}, config)
   }
   delete overlayConfig.metadata
   return overlayConfig as WebpackConfig
