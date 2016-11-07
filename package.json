@@ -36,16 +36,16 @@
     "tslint": "^3.11.0",
     "tslint-config-standard": "^1.2.2",
     "typescript": "^2.0.0",
-    "webpack": "beta"
-  },
-  "dependencies": {
-    "@easy-webpack/assign": "^0.9.9 || ^1.0.0",
+    "webpack": "beta",
     "@types/debug": "^0.0.29",
     "@types/lodash": "^4.14.37",
     "@types/node": "^6.0.46",
     "@types/source-map": "^0.1.28",
     "@types/uglify-js": "^2.6.28",
-    "@types/webpack": "^1.12.35",
+    "@types/webpack": "^1.12.35"
+  },
+  "dependencies": {
+    "@easy-webpack/assign": "^0.9.9 || ^1.0.0",
     "lodash": "^4.13.1"
   },
   "ava": {
