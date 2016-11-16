@@ -59,7 +59,7 @@ export function generateConfig(...configs: Array<EasyWebpackConfig>) {
   let config = {} as WebpackConfigWithMetadata
   if (generateConfigOptions.alwaysAddBaseMetadata || (!config.metadata && generateConfigOptions.addDefaultMetadata)) {
     config.metadata = {
-      port: process.env.WEBPACK_PORT || 9000,
+      port: parseInt(process.env.WEBPACK_PORT) || 9000,
       host: process.env.WEBPACK_HOST || 'localhost',
       ENV: process.env.NODE_ENV || process.env.ENV || 'development',
       HMR: hasProcessFlag('hot') || !!process.env.WEBPACK_HMR,
