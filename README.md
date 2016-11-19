@@ -336,12 +336,16 @@ We use [Semantic Release](https://github.com/semantic-release/semantic-release),
 
 If you created an Easy Webpack feature configuration preset package please add the conventional `easy-webpack` tag, so that others may easily find it. In case you would like to migrate it under the `@easy-webpack` scope, open an issue here and we'll see what we can do! It would be best if you used one of the pre-existing packages as a template (Semantic Release + AVA + TypeScript).
 
-## Prior art
+## Prior art and alternatives
 
 Direct inspiration for this project:
 
 - [webpack-merge](https://www.npmjs.com/package/webpack-merge) by @bebraw
 - using Array and Object destructuring for Webpack configuration files (like [this](https://github.com/chentsulin/electron-react-boilerplate/blob/d6115ccc957d788c9c8b2a82c4cd2e1685fa0103/webpack.config.development.js#L6))
+
+Alternatives:
+
+- [terse-webpack](https://github.com/ericclemmons/terse-webpack) by @ericclemmons
 
 Other projects, of which I was not aware when developing Easy Webpack listed below. I still feel Easy Webpack's final design allows for more flexible usage scenarios than the projects cited below. Feel free to judge for yourself though!
 
