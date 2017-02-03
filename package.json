@@ -33,7 +33,7 @@
     "@types/node": "^6.0.46",
     "@types/source-map": "^0.1.29",
     "@types/webpack": "^1.12.35",
-    "ava": "^0.16.0",
+    "ava": "^0.18.1",
     "greenkeeper-postpublish": "^1.0.0",
     "rimraf": "^2.5.4",
     "semantic-release": "^4.3.5",
