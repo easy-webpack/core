@@ -1,5 +1,7 @@
 # Easy Webpack
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/easy-webpack/core.svg)](https://greenkeeper.io/)
+
 Creating and maintaining configuration files for [Webpack](https://webpack.github.io/) can be both intimidating and a real chore, especially for people who don't want to invest hours or even days to studying the [far-from-great-but-slowly-getting-better docs](https://webpack.github.io/docs/), testing and debugging various options, when in reality, they only wanted to get on with their **real work**: developing apps, sites or libraries.
 
 **Easy Webpack** presents solutions to this problem to a variety of users in different ways:
