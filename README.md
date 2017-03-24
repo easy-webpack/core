@@ -64,7 +64,8 @@ To illustrate how Easy Webpack works, let's create a simple Webpack configuratio
 First, let's define some configuration objects, each clearly representing separate concerns we'd like to address in the output config file:
 
 <details>
-<summary>**Click here to expand the example**</summary>
+<summary><i>Click here to expand the example</i></summary>
+
 ```js
 const path = require('path');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
@@ -123,6 +124,7 @@ const css = {
   }
 }
 ```
+
 </details>
 
 We can now use the `generateConfig` function from `@easy-webpack/core` to combine those parts into one, functional configuration object, which differs depending on the `NODE_ENV`:
@@ -175,7 +177,9 @@ The function you pass in will be evaluated with its `this` bound to the current 
 By further creating wrapper functions that generate functions that generate configuration objects (that's a mouthful!), you can create very clean wrappers for specific functionality (this is also how our preset configs are made):
 
 <details>
-<summary>**Click here to expand the example**</summary>
+
+<summary><i>Click here to expand the example</i></summary>
+
 ```js
 import {get} from 'lodash'; // helper for extracting current value //
 
@@ -217,6 +221,7 @@ function css({ filename = '[name].css', allChunks = false, sourceMap = false, ex
   }
 }
 ```
+
 </details>
 
 Note that for simple uses, such as overriding a setting, or adding a plugin, using a simple object is usually enough.
@@ -346,6 +351,7 @@ Direct inspiration for this project:
 Alternatives:
 
 - [terse-webpack](https://github.com/ericclemmons/terse-webpack) by @ericclemmons
+- [webpack-blocks](https://github.com/andywer/webpack-blocks) by @andywer
 
 Other projects, of which I was not aware when developing Easy Webpack listed below. I still feel Easy Webpack's final design allows for more flexible usage scenarios than the projects cited below. Feel free to judge for yourself though!
 
