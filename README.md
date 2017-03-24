@@ -348,13 +348,11 @@ Direct inspiration for this project:
 - [webpack-merge](https://www.npmjs.com/package/webpack-merge) by @bebraw
 - using Array and Object destructuring for Webpack configuration files (like [this](https://github.com/chentsulin/electron-react-boilerplate/blob/d6115ccc957d788c9c8b2a82c4cd2e1685fa0103/webpack.config.development.js#L6))
 
-Alternatives:
+Check out alternatives projects that I was not aware of when developing Easy Webpack:
 
 - [terse-webpack](https://github.com/ericclemmons/terse-webpack) by @ericclemmons
 - [webpack-blocks](https://github.com/andywer/webpack-blocks) by @andywer
-
-Other projects, of which I was not aware when developing Easy Webpack listed below. I still feel Easy Webpack's final design allows for more flexible usage scenarios than the projects cited below. Feel free to judge for yourself though!
-
+- [webpack-parts](https://github.com/andywer/substantial/webpack-parts) by @substantial (deprecated)
 - [webpack-config](https://mdreizin.github.io/webpack-config/) by @mdreizin
 - [webpack-configurator](https://github.com/lewie9021/webpack-configurator) by @lewie9021
 
