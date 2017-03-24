@@ -353,6 +353,7 @@ Check out alternatives projects that I was not aware of when developing Easy Web
 - [terse-webpack](https://github.com/ericclemmons/terse-webpack) by @ericclemmons
 - [webpack-blocks](https://github.com/andywer/webpack-blocks) by @andywer
 - [webpack-parts](https://github.com/andywer/substantial/webpack-parts) by @substantial (deprecated)
+- [webpack-chain](https://github.com/mozilla-neutrino/webpack-chain) by @eliperelman
 - [webpack-config](https://mdreizin.github.io/webpack-config/) by @mdreizin
 - [webpack-configurator](https://github.com/lewie9021/webpack-configurator) by @lewie9021
 
